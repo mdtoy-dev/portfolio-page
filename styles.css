@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a, #contact a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+}
+
+nav a:hover, #contact a:hover {
+    font-weight: bolder;
+    color: #333333ba;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+section {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+}
+
+/* Make the first portfolio item bigger */
+.portfolio-item:first-child {
+    grid-column: span 2;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+}
